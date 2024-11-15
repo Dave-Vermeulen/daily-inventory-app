@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Inventory App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Daily Inventory App</h1>
+    </header>
+    <main>
+        <form id="daily-form">
+            <label for="date">Date:</label>
+            <input type="date" id="date" required>
+            <label for="enjoyment">What did I enjoy about today?</label>
+            <textarea id="enjoyment" required></textarea>
+            <label for="allah-connection">Have I connected with Allah today?</label>
+            <textarea id="allah-connection" required></textarea>
+            <label for="service-to-others">What have I done in service of others today?</label>
+            <textarea id="service-to-others" required></textarea>
+            <label for="feelings">How am I feeling today?</label>
+            <textarea id="feelings" required></textarea>
+            <label for="progress">What does progress look like for today?</label>
+            <textarea id="progress" required></textarea>
+            <label for="mood">Select your mood:</label>
+            <select id="mood" required>
+                <option value="">Select</option>
+                <option value="😊">Happy</option>
+                <option value="😐">Neutral</option>
+                <option value="😔">Sad</option>
+                <option value="😠">Angry</option>
+                <option value="😌">Relaxed</option>
+                <option value="😴">Tired</option>
+                <option value="🤔">Thoughtful</option>
+                <option value="😃">Excited</option>
+                <option value="😳">Stressed</option>
+            </select>
+            <button id="submit-btn">Submit</button>
+        </form>
+        <div id="summary-container">
+            <h2>Summary</h2>
+            <p id="summary"></p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
